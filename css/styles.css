@@ -18,11 +18,6 @@ body {
 .list {
   list-style: none;
 }
-.team-list {
-  display: flex;
-  column-gap: 24px;
-  flex-basis: calc((100% -72px) / 4);
-}
 
 .link {
   text-decoration: none;
@@ -63,16 +58,18 @@ img {
 .page-header {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--background-img-color);
 }
 .page-header-container {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .list-adress {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .header-nav {
   display: flex;
@@ -81,7 +78,7 @@ img {
 }
 .nav-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .logo-fill {
   color: var(--text-fill-color);
@@ -95,6 +92,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-fill-color);
+  margin-right: 76px;
 }
 .link-nav {
   font-style: normal;
@@ -137,15 +135,18 @@ img {
   letter-spacing: 0.04em;
   color: var(--backround-white-color);
   background-color: var(--logo-fill-color);
+  display: block;
+  height: 56px;
+  border: none;
 }
 .section-one-container {
-  padding: 188px 472px;
+  padding: 188px 0;
 }
 .section-one {
   background-color: var(--background-color);
 }
 .name-of-page {
-  width: 496px;
+  max-width: 496px;
   height: 120px;
   font-weight: 700;
   font-size: 56px;
@@ -174,10 +175,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-fill-color-slate);
 }
+
 /*SECTION-2*/
 .description-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   flex-basis: calc((100% -72px) / 4);
 }
 
@@ -188,16 +190,25 @@ img {
 
 .doing-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   flex-basis: calc((100% -46px) / 3);
 }
 
 /*SECTION-4*/
+.team-list {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc((100% -72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
 .section-four {
   background-color: var(--backround-section-color);
 }
 .name-of-team {
   background-color: var(--backround-white-color);
+}
+.section-four-container {
+  padding: 32px 16px;
 }
 .name-section {
   font-weight: 700;
@@ -222,12 +233,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--backround-section-color);
-  margin-top: 16px;
 }
 /*Footer*/
 
 .decorate-footer {
   background-color: var(--background-color);
+  padding: 100px 0;
 }
 .logo-white {
   text-decoration: none;
@@ -238,6 +249,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-fill-color);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-fill-white {
   color: var(--backround-section-color);
@@ -279,9 +292,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.border-portfolio {
-  border-bottom: 1px solid var(--background-img-color);
-}
+
 .portfolio-section-list-one {
   display: flex;
   column-gap: 24px;
