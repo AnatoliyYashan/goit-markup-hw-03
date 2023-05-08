@@ -104,6 +104,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-fill-color);
+  padding: 24px 0;
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -139,6 +140,8 @@ img {
   color: var(--backround-white-color);
   background-color: var(--logo-fill-color);
   display: block;
+  margin: auto;
+
   height: 56px;
   border: none;
 }
@@ -156,6 +159,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--backround-white-color);
+  margin: auto;
   margin-bottom: 48px;
 }
 .order-servise-btn:hover,
