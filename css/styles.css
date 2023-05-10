@@ -72,7 +72,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  column-gap: 76px;
 }
 .nav-list {
   display: flex;
@@ -102,6 +101,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-fill-color);
   padding: 24px 0;
+  display: block;
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -200,6 +200,18 @@ img {
 .doing-list-item {
   flex-basis: calc((100% -46px) / 3);
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*SECTION-4*/
 .team-list {
@@ -214,9 +226,7 @@ img {
   flex-basis: calc((100% -72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
-.section-four-container {
-  padding: 32px 16px;
-}
+
 .name-section {
   font-weight: 700;
   font-size: 36px;
@@ -260,10 +270,6 @@ img {
 }
 .logo-fill-white {
   color: var(--backround-section-color);
-}
-.container-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 /*Portfolio*/
