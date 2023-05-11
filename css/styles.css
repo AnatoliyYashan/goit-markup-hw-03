@@ -42,6 +42,8 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -156,7 +158,8 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--backround-white-color);
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
 }
 .order-servise-btn:hover,
@@ -316,7 +319,6 @@ img {
 }
 .portfolio-section-list-two {
   display: flex;
-  column-gap: 24px;
   justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 24px;
